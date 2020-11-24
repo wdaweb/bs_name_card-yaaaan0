@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 微軟正黑體;
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+      }
+      .pic {
+        background-color: #000000;
+      }
+
+      .pic img {
+        width: 50%;
+      }
+      @media (min-width: 992px) {
+        .box {
+          height: 50%;
+        }
+        .pic img {
+          width: 80%;
+        }
+        .pic {
+          height: 100%;
+          width: 40%;
+        }
+        .txt {
+          width: 100%;
+        }
+        .box::after {
+          content: "";
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 200px 200px 0;
+          border-color: transparent #ffffff transparent transparent;
+          position: absolute;
+          top: -50px;
+          right: -50px;
+          filter: drop-shadow(-10px 10px 8px rgba(0, 0, 0, 0.1));
+        }
+        .box::before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 200px 0 0 200px;
+          border-color: transparent transparent transparent #ffffff;
+          position: absolute;
+          bottom: -50px;
+          left: -50px;
+          filter: drop-shadow(10px -10px 8px rgba(0, 0, 0, 0.1));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="container d-flex justify-content-center align-items-center flex-column flex-lg-row h-100"
+    >
+      <div
+        class="box d-flex justify-content-center align-items-center flex-column flex-lg-row border shadow position-relative"
+      >
+        <div class="pic d-flex justify-content-center align-items-center">
+          <img class="p-4" src="./logo.png" alt="" />
+        </div>
+        <div class="txt">
+          <div
+            class="text-left d-flex justify-content-center align-items-center flex-column w-100 m-auto px-4 pt-5"
+          >
+            <div class="b align-self-center">
+              <p class="h6">Fornt-end Designer</p>
+              <p class="display-4">Yanlin Zhang</p>
+              <p class="h4">泰 山 職 訓 局</p>
+            </div>
+
+            <div class="pt-5 display-6">
+              <p>
+                住址:24302新北市泰山區貴子里致遠新村55之1號 <br />
+                電話:02-2901-8274 <br />
+                E-Mail: xxxxxxxx@xxxx<br />
+                網站:https://tkyhkm.wda.gov.tw
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
